@@ -1,0 +1,25 @@
+{
+  "name": "receptoo-api",
+  "version": "1.0.0",
+  "description": "simple api for course exercise",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stefankeil/receptoo-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefankeil/receptoo-api/issues"
+  },
+  "homepage": "https://github.com/stefankeil/receptoo-api#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.10"
+  }
+}
