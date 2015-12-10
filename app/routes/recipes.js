@@ -3,7 +3,7 @@ var router  = express.Router()
 var Recipe  = require('../models/recipe')
 
 router.route('/recipes')
-  // get all users
+  // get all
   .get(function (req, res) {
     Recipe.find(function (err, recipes) {
       if (err) res.send(err)
@@ -11,3 +11,5 @@ router.route('/recipes')
       res.json(recipes)
     })
   })
+
+module.exports = router

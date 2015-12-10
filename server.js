@@ -1,11 +1,13 @@
-var express    = require('express')
-var app        = express()
-var config     = require('./config')
+var express     = require('express')
+var app         = express()
+var config      = require('./config')
 
-var bodyParser = require('body-parser')
-var mongoose   = require('mongoose')
+var bodyParser  = require('body-parser')
+var mongoose    = require('mongoose')
 
-var users      = require('./app/routes/users')
+var users       = require('./app/routes/users')
+var recipes     = require('./app/routes/recipes')
+var ingredients = require('./app/routes/ingredients')
 
 // coniguartion stuff
 mongoose.connect(config.database)
@@ -27,6 +29,8 @@ router.use(function (req, res, next) {
 // register routes
 app.use('/api', router)
 app.use('/api', users)
+app.use('/api', recipes)
+app.use('/api', ingredients)
 
 app.listen(port)
 console.log('Starting Server on Port ' + port)
