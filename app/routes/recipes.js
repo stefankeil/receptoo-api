@@ -1,6 +1,6 @@
 var express = require('express')
-var router  = express.Router()
-var Recipe  = require('../models/recipe')
+var router = express.Router()
+var Recipe = require('../models/recipe')
 
 router.route('/recipes')
   // get all

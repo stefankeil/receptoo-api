@@ -1,6 +1,6 @@
 var express = require('express')
-var router  = express.Router()
-var Ingredient  = require('../models/ingredient')
+var router = express.Router()
+var Ingredient = require('../models/ingredient')
 
 router.route('/ingredients')
   // get all
