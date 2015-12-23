@@ -9,6 +9,7 @@ var recipes = require('./recipes.js')
  * Routes that can be accessed by any one
  */
 router.post('/login', auth.login)
+router.get('/checkLogin', auth.checkLogin)
 
 /*
  * Routes that can be accessed only by autheticated users
